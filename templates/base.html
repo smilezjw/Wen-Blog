@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load staticfiles %}
+    <title>
+        {% block head_title %}
+            Wen's Blog
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/blog-build.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}"/>
+</head>
+<body>
+    <section id="conductor">
+        <header>
+            <h3 class="date">
+                {% block banner %}
+                    Welcome to my Blog!
+                {% endblock %}
+            </h3>
+
+        </header>
+
+        <ul class="posts">
+            {% block content %}
+                <li class="post">Opps~ There is no content.</li>
+            {% endblock %}
+            {% block footer %}{% endblock %}
+        </ul>
+    </section>
+
+    <header id="simple" class="bigsite">
+        <div class="photo">
+            <img src="{% static 'images/Wen.JPG' %}"/>
+        </div>
+
+        <h1><a href="/">Wen's Blog</a></h1>
+        <h2>Keep going.</h2>
+        <ul id="user_info">
+            <li class="Blog"><a href="/">Blog</a></li>
+            <li class="About me"><a href="/about_me/">About Me</a></li>
+        </ul>
+    </header>
+
+
+</body>
+</html>

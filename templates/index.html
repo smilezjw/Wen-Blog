@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head_title %}
+    {{ block.super }}
+{% endblock %}
+
+{% block banner %}
+    今天是{{ nowDate }}
+    <link href="{% load %}">
+{% endblock %}
+
+{% block content %}
+    {% if posts %}
+        {% for post in posts %}
+            <li>
+                <article>
+                    <h2><a class='no-link' href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
+                    <p>{{ post.body|safe }}</p>
+                </article>
+            </li>
+        {% endfor %}
+    {% else %}
+        <li class="post"><article><p>There is no post.</p></article></li>
+    {% endif %}
+{% endblock %}
