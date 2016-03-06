@@ -1,5 +1,5 @@
 # Wen's Blog
-![image](https://github.com/smilezjw/Wen-Blog/blob/master/templates/static/images/Wen.JPG)
+![image](https://github.com/smilezjw/Wen-Blog/blob/master/templates/static/images/index.png)
 
 
 To Do List:
