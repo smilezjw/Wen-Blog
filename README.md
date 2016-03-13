@@ -3,5 +3,6 @@
 
 
 To Do List:
-1. about_me page
-2. category list
+1. css style
+2. categories
+3. articles
