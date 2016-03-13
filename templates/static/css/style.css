@@ -1,6 +1,6 @@
 .photo{
     padding-top: 50px;
-    padding-left: 45px;
+    padding-left: 60px;
 }
 
 header#simple h1{
@@ -10,5 +10,15 @@ header#simple h1{
 
 header#simple h2{
     padding-left: 40px;
+}
+
+ul#categories{
+    padding-top:20px;
+}
+
+ul#categories li{
+    padding-top:10px;
+    padding-left:28px;
+
 }
 

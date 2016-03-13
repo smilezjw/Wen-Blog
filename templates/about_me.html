@@ -4,11 +4,207 @@
     {{ block.super }} | about_me
 {% endblock %}
 
+{% load staticfiles %}
+
 {% block banner %}
-    张佳雯
+    <div class="me">
+        <span class="name">张佳雯</span>
+        <span class="contact"><img src="{% static 'images/heart.jpg' %}" />136-2198-0276</span>
+        <span class="contact"><img src="{% static 'images/mail.png' %}"/>smilezjw@qq.com</span>
+    </div>
 {% endblock %}
 
 
 {% block content %}
 
+    <div class="education">
+        <p>教育背景</p>
+        <div class="event">
+            <p>2014.9 —— 2017.3</p>
+            <p>硕士就读于同济大学</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>研究方向：推荐系统、排序学习、数据挖掘</li>
+                <li><b>平均成绩：94.85/100&nbsp;&nbsp;&nbsp;&nbsp;综合排名前5%</b></li>
+                <li><b>荣誉/奖励：</b><br>
+                    2015年国家研究生奖学金、2015年同济大学优秀学生、<br>
+                    2014年全国高校云计算应用创新大赛三等奖、2015年同济大学数学建模竞赛二等奖</li>
+                <li><b>发表论文：</b><br>
+                    1. 《基于排序学习的推荐系统研究综述》发表于《软件学报》2016年第27卷第3期，第二作者（导师一作）<br>
+                    2. 《语义推荐研究综述》已被《电子学报》录用未发表，第二作者（导师一作）
+                </li>
+            </ul>
+        </div>
+
+        <div class="event" style="padding-top: 25px">
+            <p>2010.9 —— 2014.6</p>
+            <p>本科就读于同济大学</p>
+        </div>
+        <div class="detail" style="padding-top: 25px">
+            <ul>
+                <li>计算机科学与技术专业</li>
+                <li><b>平均绩点：4.41/5.00&nbsp;&nbsp;&nbsp;&nbsp;综合排名：11/98</b></li>
+                <li><b>荣誉/奖励：</b><br>
+                    国家奖学金、国家励志奖学金、同济大学学习奖学金一等奖、同济大学学习奖学金二等奖、<br>
+                    同济大学社会活动奖学金、同济大学优秀学生称号</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="internship" style="padding-top: 38%">
+        <p>实习经历</p>
+        <div class="event">
+            <p>2015.10 —— 至今</p>
+            <p>百度上海研发中心</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>
+                    <b>金融服务测试部（百度钱包）测试开发实习生</b><br>
+                    1.使用PHP ODP框架开发渠道维护信息管理平台，实现银行维护信息的添加、修改、处理、通知等功能。<br>
+                    期间熟悉了PHP基本语法和ODP框架开发流程。<br>
+                    2.在银行测试环境中，使用Java TestNG开发接口自动化测试，实现能够自动化运行测试用例的功能，并<br>
+                    将测试结果以日志的形式输出。
+                </li>
+            </ul>
+        </div>
+
+        <div class="event" style="padding-top: 25px;">
+            <p>2015.6 —— 2015.9</p>
+            <p>IBM上海研发中心</p>
+        </div>
+        <div class="detail" style="padding-top: 25px;">
+            <ul>
+                <li>
+                    <b>爬虫开发实习生</b><br>
+                    主要负责爬取雪球、东方财富、上交所、深交所等网站数据，使用Python Scrapy模拟用户登录请求，<br>
+                    获取数据缓存到Redis，然后从Redis中读取数据进行结构化处理存储到MySQL中，下载pdf文件使用<br>
+                    pyhdfs模块上传到hdfs上。后期负责爬虫的维护和优化。<br><br>
+                </li>
+            </ul>
+        </div>
+
+        <div class="event">
+            <p>2013.11 —— 2014.9</p>
+            <p>百姓网</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>
+                    <b>数据仓库实习生</b><br>
+                    主要负责和业务人员高效沟通以确认数据需求，使用Postergresql与Hive进行数据查询与分析，以<br>
+                    及在BIRT平台开发数据报表并上线。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="projects" style="padding-top: 39%">
+        <p>项目经历</p>
+        <div class="event">
+            <p>2016.2 —— 至今</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>
+                    <b>个人博客</b><br>
+                    后端使用Django数据库使用MySQL开发个人博客，前段使用DTL结合HTML/CSS展示页面，使用<br>
+                    Django admin实现后台博文发布、修改、分类等功能。
+                </li>
+                <li><a href="https://github.com/smilezjw/Wen-Blog">
+                    https://github.com/smilezjw/Wen-Blog</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="event" style="padding-top: 25px;">
+            <p>2013.6 —— 2013.9</p>
+            <p>Simon Fraser University, Canada</p>
+        </div>
+        <div class="detail" style="padding-top:25px;">
+            <ul>
+                <li>
+                    <b>Mitacs Globallink项目</b><br>
+                    由国家留学基金委公派前往加拿大Simon Fraser University，在医学图像处理实验室担任助研，主要<br>
+                    利用Java开发并测试基于Android平台的应用程序，能够在Android移动设备上读取DICOM、OBJ等<br>
+                    图像文件，并对该图像进行相应的旋转、图层、手势响应等处理和展示。<br><br><br>
+                </li>
+            </ul>
+        </div>
+
+        <div class="event">
+            <p>2014.3 —— 2014.6</p>
+
+        </div>
+        <div class="detail">
+            <ul>
+                <li>
+                    <b>本科毕业设计</b><br>
+                    根据用户的腾讯微博数据构建物品推荐系统。使用Python从用户微博内容中提取用户需求和潜在兴趣偏好，<br>
+                    并且建立物品信息库，然后采用基于内容的推荐算法对目标用户产生物品推荐列表。
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="skills" style="padding-top: 39%;">
+        <p>专业技能</p>
+        <div class="event">
+            <p style="text-align: right; padding-right: 10px;">专业技能</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>熟练使用<b>Python</b>，能够使用<b>Django</b>框架进行Web开发；</li>
+                <li>能够使用<b>Java</b>语言编程；</li>
+                <li>了解<b>HTML/CSS/JavaScript</b>并能够进行简单的前端开发；</li>
+                <li>熟悉<b>MySQL、Postgres、SQL Server</b>数据库的使用并进行开发；</li>
+                <li>能够使用<b>Linux基本命令、Vim基本操作、Git项目管理工具、Latex文本排版系统</b>。</li>
+            </ul>
+        </div>
+
+        <div class="event" style="padding-top: 25px;">
+            <p style="text-align: right; padding-right: 10px;">技术博客</p>
+        </div>
+        <div class="detail" style="padding-top: 25px;">
+            <ul>
+                <li><b>Github:</b><a href="https://github.com/smilezjw">
+                    https://github.com/smilezjw</a>
+                </li>
+                <li><b>Blog:</b><a href="http://my.oschina.net/zhangjiawen/blog">
+                    http://my.oschina.net/zhangjiawen/blog</a><br><br>
+                </li>
+            </ul>
+        </div>
+
+        <div class="event">
+            <p style="text-align: right; padding-right: 10px;">语言水平</p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>上海话</li>
+                <li>CET-6 (581)</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="selfIntroduction" style="padding-top: 32%;">
+        <p>自我评价</p>
+        <div class="event">
+            <p></p>
+        </div>
+        <div class="detail">
+            <ul>
+                <li>兴趣爱好：游泳、瑜伽、旅行、阅读、音乐剧</li>
+                <li>自我评价：做事认真，具有责任感和良好的团队精神；学习能力较强，有较好的英文阅读和资料<br>
+                    收集整理能力；性格外向，善于沟通；热爱生活，关注社会新闻。</li>
+            </ul>
+        </div>
+    </div>
+    <p></p>
 {% endblock %}
+

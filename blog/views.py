@@ -100,4 +100,6 @@ def view_category(request, slug, page='1'):
 
 
 def about_me(request):
-    return render_to_response("about_me.html")
+    return render_to_response("about_me.html", {
+        'allCategories': Category.objects.all(),
+    })

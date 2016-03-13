@@ -1,0 +1,63 @@
+.me{
+    padding-top: 30px;
+    padding-left: 28%;
+}
+
+.name{
+    font-size: 25px;
+    font-family: "Arial","黑体","宋体",sans-serif;
+
+}
+
+.contact{
+    text-transform: none;
+    font-family: 'Microsoft YaHei','文泉驿微米黑',Helvetica,sans-serif;
+    font-weight: normal;
+    color: #CB0909;
+    padding-left: 5%;
+    font-size: 16px;
+}
+
+.posts div p{
+    font-size:18px;
+    font-weight: bold;
+    padding-left: 13%;
+    color:#316381;
+}
+
+div.event{
+    float:left;
+    width: 20%;
+}
+
+div.detail{
+    float:left;
+    border-left:solid;
+    border-color: #61B0DE;
+    width: 78%;
+}
+
+div.detail ul{
+    list-style-type: circle;
+    padding-left: 35px;
+    width:100%;
+    line-height: 22px;
+}
+
+div.event p{
+    font-size: 16px;
+    color:#32759C;
+}
+
+div.detail ul li{
+    font-size:14px;
+    width:100%;
+}
+
+div.detail ul li a{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+
+div.internship
